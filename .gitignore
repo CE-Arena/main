@@ -1,0 +1,8 @@
+# CE ARENA - Files excluded from Git
+ce-arena-results.txt
+index.html.backup
+*.log
+.env
+.env.*
+!.env.example
+node_modules/
