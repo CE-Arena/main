@@ -1,1 +1,218 @@
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#061526;color:white;font-family:Arial,Helvetica,sans-serif}header{display:flex;justify-content:space-between;align-items:center;padding:20px 7%;background:#04111e;border-bottom:1px solid #193047}.brand{font-size:26px;font-weight:900;color:#00e53b;letter-spacing:2px;text-decoration:none}.brand span{color:white}nav{display:flex;gap:22px}nav a{color:#d6e2ec;text-decoration:none;font-size:14px}nav a:hover.hero{min-height:520px;display:flex;align-items:center;padding:70px 7%;background:radial-gradient(circle at 85% 40%,#124e43 0%,#0b2533 35%,#061526 75%)}.hero-content{max-width:650px}.label{color:#00e53b;font-weight:bold;letter-spacing:4px;font-size:13px}h1{font-size:clamp(44px,7vw,78px);line-height:1.05;margin:18px 0}h1 span{color:#00e53b}.subtitle{font-size:22px;color:#f1f5f9}.description{font-size:16px;color:#a7bac8;line-height:1.8;max-width:520px}.buttons{display:flex;gap:15px;margin-top:35px;flex-wrap:wrap}.btn{padding:15px 25px;border-radius:30px;text-decoration:none;font-weight:bold;font-size:14px}.primary{background:#00e53b;color:#04111e}.secondary{border:1px solid #72909d;color:white}.about{padding:65px 7%;background:#ffffff;color:#071827}.about h2{font-size:32px;margin-top:0}.about p{color:#415466;line-height:1.8;max-width:750px}footer{text-align:center;padding:30px;background:#04111e;color:#91a7b7;font-size:13px}@media(max-width:650px){header{padding:18px 5%;align-items:flex-start;gap:15px;flex-direction:column}nav{flex-wrap:wrap;gap:14px}.hero{min-height:490px;padding:55px 6%}.subtitle{font-size:19px}.description{font-size:15px}.buttons{flex-direction:column;align-items:flex-start}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#061526;color:white;font-family:Arial,Helvetica,sans-serif}header{display:flex;justify-content:space-between;align-items:center;padding:20px 7%;background:#04111e;border-bottom:1px solid #193047}.brand{font-size:26px;font-weight:900;color:#00e53b;letter-spacing:2px;text-decoration:none}.brand span{color:white}nav{display:flex;gap:22px}nav a{color:#d6e2ec;text-decoration:none;font-size:14px}nav a:hover{color:#00e53b}.hero{min-height:520px;display:flex;align-items:center;padding:70px 7%;background:radial-gradient(circle at 85% 40%,#124e43 0%,#0b2533 35%,#061526 75%)}.hero-content{max-width:650px}.label{color:#00e53b;font-weight:bold;letter-spacing:4px;font-size:13px}h1{font-size:clamp(44px,7vw,78px);line-height:1.05;margin:18px 0}h1 span{color:#00e53b}.subtitle{font-size:22px;color:#f1f5f9}.description{font-size:16px;color:#a7bac8;line-height:1.8;max-width:520px}.buttons{display:flex;gap:15px;margin-top:35px;flex-wrap:wrap}.btn{padding:15px 25px;border-radius:30px;text-decoration:none;font-weight:bold;font-size:14px}.primary{background:#00e53b;color:#04111e}.secondary{border:1px solid #72909d;color:white}.about{padding:65px 7%;background:#ffffff;color:#071827}.about h2{font-size:32px;margin-top:0}.about p{color:#415466;line-height:1.8;max-width:750px}footer{text-align:center;padding:30px;background:#04111e;color:#91a7b7;font-size:13px}@media(max-width:650px){header{padding:18px 5%;align-items:flex-start;gap:15px;flex-direction:column}nav{flex-wrap:wrap;gap:14px}.hero{min-height:490px;padding:55px 6%}.subtitle{font-size:19px}.description{font-size:15px}.buttons{flex-direction:column;align-items:flex-start}}
+/* ========================================
+   CE ARENA — BRANDING
+======================================== */
+
+header .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+header .brand-logo {
+    display: block;
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+}
+
+header .brand-name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0;
+    line-height: 0.95;
+}
+
+header .brand-ce {
+    display: block;
+    font-size: 23px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    color: #00e53b;
+}
+
+header .brand-arena {
+    display: block;
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+/* ========================================
+   CE ARENA — HERO SECTION
+======================================== */
+
+nav a:hover {
+    color: #00e53b;
+}
+
+.hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    padding: 70px 7%;
+    background: radial-gradient(
+        circle at 85% 40%,
+        #124e43 0%,
+        #0b2533 35%,
+        #061526 75%
+    );
+}
+
+/* ========================================
+   MOBILE RESPONSIVENESS
+======================================== */
+
+@media (max-width: 650px) {
+    header .brand-logo {
+        width: 58px;
+        height: 58px;
+    }
+
+    header .brand-ce {
+        font-size: 20px;
+    }
+
+    header .brand-arena {
+        font-size: 22px;
+    }
+
+    .hero {
+        min-height: 490px;
+        padding: 55px 6%;
+    }
+}
+
+/* CE ARENA — Official horizontal branding */
+header .brand {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+header .brand-logo {
+    width: 240px;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 650px) {
+    header .brand-logo {
+        width: 190px;
+        height: auto;
+    }
+}
+
+/* =====================================
+   CE ARENA — REFERENCE HERO DESIGN
+===================================== */
+
+.hero {
+    position: relative;
+    min-height: 620px;
+    display: flex;
+    align-items: center;
+    padding: 70px 7%;
+    overflow: hidden;
+    background-color: #061526;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 750px;
+}
+
+.hero-label {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 25px;
+    color: #00e53b;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.hero-label::before {
+    content: "";
+    width: 42px;
+    height: 3px;
+    background: #00e53b;
+    border-radius: 3px;
+}
+
+.hero h1 {
+    margin: 0 0 25px;
+    color: #ffffff;
+    font-size: clamp(42px, 5.6vw, 76px);
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -2px;
+}
+
+.hero h1 span {
+    color: #00e53b;
+}
+
+.hero .subtitle {
+    margin: 0 0 22px;
+    color: white;
+    font-size: clamp(23px, 3vw, 34px);
+    font-weight: 700;
+}
+
+.hero .description {
+    max-width: 520px;
+    color: #f1f5f9;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.hero .buttons {
+    margin-top: 35px;
+}
+
+.hero .btn.primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 35px;
+    background: #00e53b;
+    color: #061526;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+/* Mobile */
+
+@media (max-width: 650px) {
+    .hero {
+        min-height: 580px;
+        padding: 55px 5%;
+    }
+
+    .hero h1 {
+        font-size: clamp(39px, 8vw, 58px);
+        letter-spacing: -1px;
+    }
+
+    .hero-label {
+        font-size: 14px;
+    }
+
+    .hero .subtitle {
+        font-size: 23px;
+    }
+
+    .hero .description {
+        font-size: 16px;
+    }
+}
